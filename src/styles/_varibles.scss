@@ -1,0 +1,8 @@
+// 
+$Iris-100: #5D5FEF;
+$Gray-900:#111827;
+$radius: 3px;
+
+@mixin rounded {
+    border-radius: $radius
+}
