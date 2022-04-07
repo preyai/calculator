@@ -1,5 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
+import drag from './counter/dragSlice'
 
-export default configureStore({
-    reducer: {}
+const store = configureStore({
+    reducer: {
+        drag,
+    }
 })
+
+export default store
+export type RootState = ReturnType<typeof store.getState>

@@ -6,8 +6,12 @@ export const dragSlice = createSlice({
         value: undefined,
     },
     reducers: {
-        setCounter: (state, action) => {
+        setDrag: (state, action) => {
             state.value = action.payload;
         },
     },
 });
+
+export const { setDrag } = dragSlice.actions;
+
+export default dragSlice.reducer;
