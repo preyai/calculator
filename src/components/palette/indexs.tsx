@@ -1,7 +1,12 @@
-import styles from './Palette.module.scss';
+import Draggable from '../draggable';
+import styles from './palette.module.scss';
+
 const Palette = () => {
     return (
-        <div></div>
+        <div>
+            <Draggable />
+            <Draggable />
+        </div>
     )
 }
 
