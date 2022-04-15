@@ -1,0 +1,15 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #E2E3E5;
+    border-radius: 6px;
+    min-height: 48px;
+    min-width: calc(100% / 3 - 8px);
+    padding: 0;
+    // text
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+}

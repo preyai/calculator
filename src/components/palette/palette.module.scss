@@ -1,2 +1,10 @@
 // @type
 @use '../../styles/varibles'as *;
+
+.box {
+    >div {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+}
