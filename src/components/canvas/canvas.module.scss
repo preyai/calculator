@@ -1,5 +1,35 @@
+@use '../../styles/varibles'as *;
+
 .box {
-    width: 400px;
-    height: 800px;
-    background-color: aqua;
+    width: 240px;
+    border: 2px dashed #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+
+    svg {
+        margin-bottom: 10px;
+    }
+}
+
+.placeholder_title {
+    color: $Iris-100;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.placeholder_text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #6B7280;
 }

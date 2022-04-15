@@ -1,0 +1,25 @@
+.box {
+    width: 240px;
+    display: flex;
+    background: #F3F4F6;
+    border-radius: 6px;
+    padding: 1px;
+    min-height: 38px;
+}
+
+.btn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+
+    &.active {
+        background: #FFFFFF;
+        border: 1px solid #E2E3E5;
+        border-radius: 5px;
+    }
+}

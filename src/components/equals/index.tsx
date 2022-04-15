@@ -4,7 +4,7 @@ import Wrapper from "../wrapper"
 const Equals = () => {
     return (
         <Wrapper columns={1}>
-            <Button text="=" />
+            <Button text="=" iris={true} />
         </Wrapper>
     )
 }

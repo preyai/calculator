@@ -1,7 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
+import mode from './mode/modeSlice'
 
 const store = configureStore({
     reducer: {
+        mode
     }
 })
 

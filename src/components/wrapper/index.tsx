@@ -7,7 +7,11 @@ interface WrapperProps {
 
 function Wrapper({ children, columns = 4 }: PropsWithChildren<WrapperProps>) {
     return (
-        <div className={styles.box} style={{ gridTemplateColumns: `repeat(${columns}, 1fr)` }}>
+        <div
+            className={styles.box}
+            style={{ gridTemplateColumns: `repeat(${columns}, 1fr)` }}
+            draggable
+        >
             {children}
         </div>
     )

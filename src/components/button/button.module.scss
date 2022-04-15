@@ -1,3 +1,5 @@
+@use '../../styles/varibles'as *;
+
 .box {
     display: flex;
     justify-content: center;
@@ -12,4 +14,14 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 15px;
+
+    &:hover {
+        // border-color: $Iris-100;
+    }
+}
+
+.iris {
+    min-height: 64px;
+    background-color: $Iris-100;
+    color: #ffffff;
 }

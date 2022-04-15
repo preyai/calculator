@@ -8,3 +8,26 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
 }
+
+.App {
+    width: max-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    min-height: 100vh;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 56px;
+}
+
+.just {
+    &-right {
+        justify-content: right;
+    }
+}
