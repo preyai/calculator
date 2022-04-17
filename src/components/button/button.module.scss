@@ -15,8 +15,16 @@
     font-size: 14px;
     line-height: 15px;
 
+}
+
+.enable {
     &:hover {
-        // border-color: $Iris-100;
+        border-color: $Iris-100;
+    }
+
+    &:active {
+        background-color: $Iris-100;
+        color: #ffffff;
     }
 }
 

@@ -10,9 +10,11 @@ interface detailPayload {
 
 const titles: detailTitle[] = ['DISPLAY', 'ACTIONS', 'SYMBOLS', 'EQUALS']
 
+const d = titles.map(t => getIDetail(t))
+
 const initialState: detailsState = {
     list: [],
-    palete: titles.map(t => getIDetail(t))
+    palete: d
 }
 
 const detailsSlice = createSlice({

@@ -1,21 +1,22 @@
+import useCalculator from "../../hooks/useCalculator"
 import { detailProps } from "../../interfaces/details"
 import Button from "../button"
 import Wrapper from "../wrapper"
 
+const symbols = ['7', '8', '9', '4', '5', '6', '1', '2', '3', '0', ',']
+
 const Symbols = ({ detail, position }: detailProps) => {
+    const { input } = useCalculator()
     return (
         <Wrapper columns={3} detail={detail} position={position}>
-            <Button text="7" />
-            <Button text="8" />
-            <Button text="9" />
-            <Button text="4" />
-            <Button text="5" />
-            <Button text="6" />
-            <Button text="1" />
-            <Button text="2" />
-            <Button text="3" />
-            <Button text="0" size={'1/3'} />
-            <Button text="," />
+            {symbols.map(s => (
+                <Button
+                    text={s}
+                    size={s === '0' ? '1/3' : undefined}
+                    key={s}
+                    handler={() => input(s)}
+                />
+            ))}
         </Wrapper>
     )
 }
