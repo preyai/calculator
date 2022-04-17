@@ -1,9 +1,10 @@
+import { detailProps } from "../../interfaces/details"
 import Button from "../button"
 import Wrapper from "../wrapper"
 
-const Symbols = () => {
+const Symbols = ({ detail, position }: detailProps) => {
     return (
-        <Wrapper columns={3}>
+        <Wrapper columns={3} detail={detail} position={position}>
             <Button text="7" />
             <Button text="8" />
             <Button text="9" />

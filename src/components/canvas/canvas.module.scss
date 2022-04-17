@@ -2,9 +2,24 @@
 
 .dropZone {
     width: 240px;
-    border: 2px dashed #C4C4C4;
     box-sizing: border-box;
-    border-radius: 6px;
+
+    >div {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.target {
+    @include target;
+    position: relative;
+    margin-bottom: -1px !important;
+
+    &:first-child {
+        transform: translateY(-7px);
+    }
+
 }
 
 .placeholder {
@@ -14,9 +29,15 @@
     justify-content: center;
     text-align: center;
     height: 100%;
+    border: 2px dashed #C4C4C4;
+    border-radius: 6px;
 
     svg {
         margin-bottom: 10px;
+    }
+
+    &.active {
+        background-color: #F0F9FF;
     }
 }
 

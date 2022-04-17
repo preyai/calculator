@@ -1,2 +1,30 @@
 $Iris-100: #5D5FEF;
 $Gray-900:#111827;
+
+@mixin target {
+    position: absolute;
+    height: 1px;
+    background-color: #5D5FEF;
+    left: 0;
+    right: 0;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+
+        top: -2px;
+        width: 5px;
+        height: 5px;
+        background-color: #5D5FEF;
+        transform: rotateZ(45deg);
+    }
+
+    &::before {
+        left: -5px;
+    }
+
+    &::after {
+        right: -5px;
+    }
+}
