@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.edcff671.css",
-    "main.js": "/static/js/main.d139f576.js",
-    "static/media/placeholder.svg": "/static/media/placeholder.d0b0123922294c0be3377037e2df977e.svg",
-    "static/media/eye.svg": "/static/media/eye.4262f49889f987c3140bf3973172bf21.svg",
-    "index.html": "/index.html",
-    "static/media/selector.svg": "/static/media/selector.c4ce72f900ec1e444eaffe27dff6bccd.svg",
-    "main.edcff671.css.map": "/static/css/main.edcff671.css.map",
-    "main.d139f576.js.map": "/static/js/main.d139f576.js.map"
+    "main.css": "/calculator/static/css/main.edcff671.css",
+    "main.js": "/calculator/static/js/main.40d3933c.js",
+    "static/media/placeholder.svg": "/calculator/static/media/placeholder.d0b0123922294c0be3377037e2df977e.svg",
+    "static/media/eye.svg": "/calculator/static/media/eye.4262f49889f987c3140bf3973172bf21.svg",
+    "index.html": "/calculator/index.html",
+    "static/media/selector.svg": "/calculator/static/media/selector.c4ce72f900ec1e444eaffe27dff6bccd.svg",
+    "main.edcff671.css.map": "/calculator/static/css/main.edcff671.css.map",
+    "main.40d3933c.js.map": "/calculator/static/js/main.40d3933c.js.map"
   },
   "entrypoints": [
     "static/css/main.edcff671.css",
-    "static/js/main.d139f576.js"
+    "static/js/main.40d3933c.js"
   ]
 }
